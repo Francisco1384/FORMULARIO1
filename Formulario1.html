@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body bgcolor="#9AE9FF">
+
+<center><h2>Formulario de Contacto</h2>
+
+<center><form action="#" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" required><br><br>
+
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <label for="telefono">Teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono" required><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="checkbox" id="terminos" name="terminos" required>
+    <label for="terminos">Acepto los términos y condiciones</label><br><br>
+
+    <div class="g-recaptcha" data-sitekey="TU_CLAVE_SECRETA"></div><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
